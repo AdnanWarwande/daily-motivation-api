@@ -37,6 +37,6 @@ jobs:
         image: adnanwarwande/springboot-cidi-workflow
         tags: latest
         registry: docker.io
-        dockerfile: Dockerfile.ci.ci
+        dockerfile: Dockerfile.ci
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
