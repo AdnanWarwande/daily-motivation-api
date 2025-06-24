@@ -1,4 +1,4 @@
-FROM openJDK:17
+FROM openjdk:17
 EXPOSE 8080
-ADD target/springboot-cidi-workflow.jar springboot-cidi-workflow.jar
-ENTRYPOINT ["java","-jar","/springboot-cidi-workflow.jar"]
+COPY target/springboot-cidi-workflow.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
